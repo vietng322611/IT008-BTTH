@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Bai01.cs" />
+      <None Include="Bai01.cs" />
+      <Compile Remove="Bai02.cs" />
+      <None Include="Bai02.cs" />
+      <Compile Remove="Bai03.cs" />
+      <None Include="Bai03.cs" />
+      <Compile Remove="Bai04.cs" />
+      <None Include="Bai04.cs" />
+      <Compile Remove="Bai05.cs" />
+      <None Include="Bai05.cs" />
+      <Compile Remove="Bai06.cs" />
+      <None Include="Bai06.cs" />
+    </ItemGroup>
+
+</Project>
