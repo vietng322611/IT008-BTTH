@@ -31,7 +31,7 @@ partial class Bai6
     /// </summary>
     private void InitializeComponent()
     {
-        DisplayBox = new System.Windows.Forms.TextBox();
+        NumberDisplay = new System.Windows.Forms.TextBox();
         Btn7 = new System.Windows.Forms.Button();
         Btn8 = new System.Windows.Forms.Button();
         Btn9 = new System.Windows.Forms.Button();
@@ -46,7 +46,7 @@ partial class Bai6
         Btn3 = new System.Windows.Forms.Button();
         Btn0 = new System.Windows.Forms.Button();
         Btn1 = new System.Windows.Forms.Button();
-        SwitchBtn = new System.Windows.Forms.Button();
+        SwitchOpBtn = new System.Windows.Forms.Button();
         Btn2 = new System.Windows.Forms.Button();
         BtnAdd = new System.Windows.Forms.Button();
         BtnSub = new System.Windows.Forms.Button();
@@ -59,17 +59,19 @@ partial class Bai6
         MRBtn = new System.Windows.Forms.Button();
         MSBtn = new System.Windows.Forms.Button();
         MPlusBtn = new System.Windows.Forms.Button();
+        OperationDisplay = new System.Windows.Forms.Label();
         SuspendLayout();
         // 
-        // DisplayBox
+        // NumberDisplay
         // 
-        DisplayBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-        DisplayBox.Location = new System.Drawing.Point(12, 21);
-        DisplayBox.Name = "DisplayBox";
-        DisplayBox.ReadOnly = true;
-        DisplayBox.Size = new System.Drawing.Size(352, 27);
-        DisplayBox.TabIndex = 1;
-        DisplayBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+        NumberDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+        NumberDisplay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        NumberDisplay.Location = new System.Drawing.Point(71, 21);
+        NumberDisplay.Name = "NumberDisplay";
+        NumberDisplay.ReadOnly = true;
+        NumberDisplay.Size = new System.Drawing.Size(293, 34);
+        NumberDisplay.TabIndex = 1;
+        NumberDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
         // 
         // Btn7
         // 
@@ -197,14 +199,14 @@ partial class Bai6
         Btn1.Text = "1";
         Btn1.UseVisualStyleBackColor = true;
         // 
-        // SwitchBtn
+        // SwitchOpBtn
         // 
-        SwitchBtn.Location = new System.Drawing.Point(130, 231);
-        SwitchBtn.Name = "SwitchBtn";
-        SwitchBtn.Size = new System.Drawing.Size(53, 35);
-        SwitchBtn.TabIndex = 0;
-        SwitchBtn.Text = "+/-";
-        SwitchBtn.UseVisualStyleBackColor = true;
+        SwitchOpBtn.Location = new System.Drawing.Point(130, 231);
+        SwitchOpBtn.Name = "SwitchOpBtn";
+        SwitchOpBtn.Size = new System.Drawing.Size(53, 35);
+        SwitchOpBtn.TabIndex = 0;
+        SwitchOpBtn.Text = "+/-";
+        SwitchOpBtn.UseVisualStyleBackColor = true;
         // 
         // Btn2
         // 
@@ -314,11 +316,22 @@ partial class Bai6
         MPlusBtn.Text = "M+";
         MPlusBtn.UseVisualStyleBackColor = true;
         // 
+        // OperationDisplay
+        // 
+        OperationDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+        OperationDisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        OperationDisplay.Location = new System.Drawing.Point(24, 21);
+        OperationDisplay.Name = "OperationDisplay";
+        OperationDisplay.Size = new System.Drawing.Size(28, 27);
+        OperationDisplay.TabIndex = 15;
+        OperationDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
         // Bai6
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(374, 287);
+        Controls.Add(OperationDisplay);
         Controls.Add(MPlusBtn);
         Controls.Add(MSBtn);
         Controls.Add(MRBtn);
@@ -330,7 +343,7 @@ partial class Bai6
         Controls.Add(BtnFrac);
         Controls.Add(BtnAdd);
         Controls.Add(BtnSub);
-        Controls.Add(SwitchBtn);
+        Controls.Add(SwitchOpBtn);
         Controls.Add(Btn2);
         Controls.Add(Btn0);
         Controls.Add(Btn1);
@@ -346,12 +359,14 @@ partial class Bai6
         Controls.Add(Btn9);
         Controls.Add(Btn8);
         Controls.Add(Btn7);
-        Controls.Add(DisplayBox);
+        Controls.Add(NumberDisplay);
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         Text = "Bai6";
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.Label OperationDisplay;
 
     private System.Windows.Forms.Button Btn7;
     private System.Windows.Forms.Button Btn0;
@@ -371,7 +386,7 @@ partial class Bai6
 
     private System.Windows.Forms.Button BtnDot;
     private System.Windows.Forms.Button Btn3;
-    private System.Windows.Forms.Button SwitchBtn;
+    private System.Windows.Forms.Button SwitchOpBtn;
     private System.Windows.Forms.Button Btn2;
     private System.Windows.Forms.Button BtnAdd;
     private System.Windows.Forms.Button BtnSub;
@@ -389,7 +404,7 @@ partial class Bai6
     private System.Windows.Forms.Button Btn9;
     private System.Windows.Forms.Button BtnDiv;
 
-    private System.Windows.Forms.TextBox DisplayBox;
+    private System.Windows.Forms.TextBox NumberDisplay;
 
     #endregion
 }
