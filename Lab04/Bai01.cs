@@ -21,7 +21,7 @@ public partial class Bai01 : Form
         }
     }
     
-    private void Bai01_OnMouseDown(object? o, MouseEventArgs e)
+    private void Bai01_OnMouseDown(object? sender, MouseEventArgs e)
     {
         MouseBtnLb.Text = e.Button.ToString();
         MousePosLb.Text = $"X = {e.X}; Y = {e.Y}";
