@@ -44,9 +44,9 @@ partial class Bai03
         // statusStrip
         // 
         statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-        statusStrip.Location = new System.Drawing.Point(0, 428);
+        statusStrip.Location = new System.Drawing.Point(0, 631);
         statusStrip.Name = "statusStrip";
-        statusStrip.Size = new System.Drawing.Size(800, 22);
+        statusStrip.Size = new System.Drawing.Size(982, 22);
         statusStrip.TabIndex = 0;
         statusStrip.Text = "238472359232";
         // 
@@ -57,7 +57,7 @@ partial class Bai03
         menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { fileToolStripMenuItem });
         menuStrip.Location = new System.Drawing.Point(0, 0);
         menuStrip.Name = "menuStrip";
-        menuStrip.Size = new System.Drawing.Size(800, 28);
+        menuStrip.Size = new System.Drawing.Size(982, 28);
         menuStrip.TabIndex = 1;
         menuStrip.Text = "menuStrip";
         // 
@@ -92,10 +92,12 @@ partial class Bai03
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(800, 450);
+        ClientSize = new System.Drawing.Size(982, 653);
         Controls.Add(statusStrip);
         Controls.Add(menuStrip);
         MainMenuStrip = menuStrip;
+        MaximizeBox = false;
+        MinimizeBox = false;
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         Text = "Chương trình Windows Media";
         menuStrip.ResumeLayout(false);

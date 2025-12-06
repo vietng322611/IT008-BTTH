@@ -17,7 +17,7 @@ public partial class Bai03 : Form
         player = new AxWindowsMediaPlayer();
         player.BeginInit();
         player.Location = new Point(12, 31);
-        player.Size = new Size(776, 394);
+        player.Size = new Size(958, 597);
         Controls.Add(player);
         player.EndInit();
 
