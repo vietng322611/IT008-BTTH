@@ -62,11 +62,16 @@ public partial class Bai05 : Form
 
     private void OnSearchChange(object? sender, EventArgs e)
     {
-        var results = students
-            .Where(s => 
-                s.StudentName.Contains(toolSearchTB.Text, StringComparison.CurrentCultureIgnoreCase))
-            .ToList();
-        dataGridView1.DataSource = results;
+        if (toolSearchTB.Text == "")
+            dataGridView1.DataSource = students;
+        else
+        {
+            var results = students
+                .Where(s => 
+                    s.StudentName.Contains(toolSearchTB.Text, StringComparison.CurrentCultureIgnoreCase))
+                .ToList();
+            dataGridView1.DataSource = results;
+        }
     }
 
     private void SaveAndClose(object? sender, EventArgs e)
