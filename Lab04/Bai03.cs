@@ -1,4 +1,7 @@
-﻿using AxWMPLib;
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+using AxWMPLib;
 using Timer = System.Windows.Forms.Timer;
 
 namespace Lab04;

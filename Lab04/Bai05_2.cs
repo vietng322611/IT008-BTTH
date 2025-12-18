@@ -1,4 +1,7 @@
-﻿namespace Lab04;
+﻿using System;
+using System.Windows.Forms;
+
+namespace Lab04;
 
 public partial class Bai05_2 : Form
 {

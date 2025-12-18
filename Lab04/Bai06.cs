@@ -1,4 +1,10 @@
-﻿namespace Lab04;
+﻿using System;
+using System.Drawing;
+using System.IO;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Lab04;
 
 public partial class Bai06 : Form
 {

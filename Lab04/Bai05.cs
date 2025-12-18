@@ -1,4 +1,7 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
+using System.Linq;
+using System.Windows.Forms;
 using Microsoft.Data.Sqlite;
 
 namespace Lab04;
