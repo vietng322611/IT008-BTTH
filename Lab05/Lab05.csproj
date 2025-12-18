@@ -26,4 +26,11 @@
       </Compile>
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="texture.jpg" />
+      <Content Include="texture.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>

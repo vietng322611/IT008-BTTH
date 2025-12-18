@@ -193,6 +193,7 @@ partial class Bai10
         ClientSize = new System.Drawing.Size(655, 415);
         Controls.Add(panelPreview);
         Controls.Add(panel1);
+        StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         Text = "Pen Demo";
         panel1.ResumeLayout(false);
         ResumeLayout(false);
